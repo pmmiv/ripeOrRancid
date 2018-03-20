@@ -1,0 +1,27 @@
+body {
+	background-color: #006b3a;
+	font-size: 16px;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.btn-outline-success {
+    color: #006b3a;
+    border-color: #006b3a;
+}
+
+.btn-outline-success:hover {
+	background-color: #006b3a;
+	color: white;
+}
+
+#peelHoverMsg {
+	margin-right: 10px;
+}
+
+.articleDiv {
+	text-align: center;
+	padding: 30px;
+	background-color: white;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
