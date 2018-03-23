@@ -2,7 +2,6 @@ $(document).ready(function(){
 	$("#peelHoverMsg").show();
 
 	$(".commentsDiv").hide();
-	console.log("fuck you, idiot")
 
 	$(".commentsBtn").click(function(){
 		$(".commentsDiv").hide();
@@ -32,6 +31,10 @@ $(document).ready(function(){
 
 	$("#peelBtn").hover(function(event){
 		$("#peelHoverMsg").hide();
+	});
+
+	$("#peelBtn").click(function(){
+		location.reload();
 	});
 
 	$(".ripeBtn").click(function(){

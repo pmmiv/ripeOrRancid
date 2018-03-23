@@ -14,7 +14,7 @@ module.exports = function(app) {
 
 				if (result.title && result.link) {
 					db.Article.create(result).then(function(dbArticle){}).catch(function(err) {
-						console.log(res.json(err));
+						console.log(err);
 					});
 				}
 			})
