@@ -8,10 +8,7 @@ var mongoose = require("mongoose");
 
 var port = process.env.PORT || 3000;
 
-
-// Requiring the `User` model for accessing the `users` collection
-// I don't think I'll need this because I'm using mongo
-// var User = require("./userModel.js");
+var db = require("./models");
 
 // Initialize Express
 var app = express();
@@ -32,12 +29,8 @@ app.use(express.static("public"));
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
-// By default mongoose uses callbacks for async queries, we're setting it to use promises (.then syntax) instead
-// Connect to the Mongo DB
-// mongoose.Promise = Promise;
-// mongoose.connect("mongodb://localhost/userdb", {
-  // useMongoClient: true
-// });
+mongoose.Promise = Promise;
+mongoose.connect("mongodb://localhost/ripeRancid");
 
 // Start the server
 app.listen(port, function() {

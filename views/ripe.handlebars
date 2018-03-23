@@ -1,1 +1,13 @@
-<h1> Ripe Rendered </h1>
+</nav>
+
+<div class="container">
+	<div class="row">
+		<div class="col-12 articleDiv">
+			<h2> Ripe Articles </h2>
+
+			{{#each ripeArticles}}
+				{{> articles/ripe-block}}
+			{{/each}}
+		</div>
+	</div>
+</div>

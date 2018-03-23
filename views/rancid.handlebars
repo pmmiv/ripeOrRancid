@@ -1,1 +1,13 @@
-<h1> Rancid Rendered </h1>
+</nav>
+
+<div class="container">
+	<div class="row">
+		<div class="col-12 articleDiv">
+			<h2> Rancid Articles </h2>
+
+			{{#each rancidArticles}}
+				{{> articles/rancid-block}}
+			{{/each}}
+		</div>
+	</div>
+</div>

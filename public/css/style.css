@@ -2,16 +2,48 @@ body {
 	background-color: #006b3a;
 	font-size: 16px;
 	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	box-sizing: border-box;
 }
 
-.btn-outline-success {
+h2 {
+	font-size: 2.8em;
+}
+
+.peelBtn {
     color: #006b3a;
     border-color: #006b3a;
 }
 
-.btn-outline-success:hover {
+.peelBtn:hover {
 	background-color: #006b3a;
 	color: white;
+	border-color: white;
+}
+
+.ripeBtn {
+	background-color: #ccffcc;
+	font-weight: bold;
+	border-color: #003B03;
+	color: #003B03;
+}
+
+.ripeBtn:hover {
+	background-color: #003B03;
+	color: white;
+	border-color: white;
+}
+
+.rancidBtn {
+	background-color: #FFF999;
+	font-weight: bold;
+	border-color: #ddb555;
+	color: #ddb555;
+}
+
+.rancidBtn:hover {
+	background-color: #ddb555;
+	color: white;
+	border-color: white;
 }
 
 #peelHoverMsg {
@@ -23,5 +55,20 @@ body {
 	padding: 30px;
 	background-color: white;
 	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
+	border-radius: 5px;
+}
+
+.artTitle {
+	color: black;
+	font-size: 1.5em;
+}
+
+.navbar {
+	background-color: white;
+}
+
+.artRow {
+	padding: 10px;
+	border-top: 1px solid #006B3A;
 }

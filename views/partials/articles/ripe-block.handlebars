@@ -1,0 +1,23 @@
+<div class="row artRow">
+	<div class="col-2">
+		<button class="btn btn-outline-success commentsBtn" data-id="{{_id}}" data-toggle="modal" data-target="#myModal">Comments</button>
+	</div>
+
+	<div class="col-8">
+		<a href="{{link}}"><span class="artTitle">{{title}}</span></a>
+	</div>
+
+	<div class="col-2">
+		<button class="btn btn-outline-success rancidBtn" data-id="{{_id}}">Make Rancid!</button>
+	</div>
+
+	<div class="col-12 commentsDiv" id="{{id}}">
+		<div class="row">
+			<div class="col-12">
+				<input type="text" name="title" class="form-control" placeholder="Title"><br>
+				<textarea class="form-control" type="text" name="body" placeholder="How did it make you cry?"></textarea><br>
+				<button type="submit" class="btn btn-success">Post</button>
+			</div>
+		</div>
+	</div>
+</div>

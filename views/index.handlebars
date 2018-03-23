@@ -1,7 +1,17 @@
+    <form class="form-inline my-2 my-lg-0" action="/scrape">
+      <span id="peelHoverMsg">Press the button to peel the most recent onion articles </span>
+      <button class="btn btn-outline-success my-2 my-sm-0" id="peelBtn" type="submit">Peel!</button>
+    </form>
+</nav>
+
 <div class="container">
 	<div class="row">
 		<div class="col-12 articleDiv">
-			<h2> Index Rendered </h2>
+			<h2> Peeled Onion Articles </h2>
+
+			{{#each articles}}
+				{{> articles/article-block}}
+			{{/each}}
 		</div>
 	</div>
 </div>
