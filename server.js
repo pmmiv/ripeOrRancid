@@ -30,7 +30,11 @@ require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
 mongoose.Promise = Promise;
+if (process.env.MONGODB_URI) {
+	mongoose.connect(process.env.MONGODB_URI);
+} else {
 mongoose.connect("mongodb://localhost/ripeRancid");
+}
 
 // Start the server
 app.listen(port, function() {
